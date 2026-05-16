@@ -102,7 +102,7 @@ export default function App() {
     { q: "How much does it cost?", a: "Each class is $10. You pay only for the classes you attend. There are no packages, no commitments, and no long-term contracts." },
     { q: "When does the program start?", a: "Classes begin the first week of June. Register early as space is limited." },
     { q: "What is covered each session?", a: "Sessions focus on high-yield strategies, common question patterns, pacing, and problem-solving techniques. Subjects rotate throughout the week for comprehensive coverage." },
-    { q: "Are classes online or in-person?", a: "Reach out via the contact information on this page and Joanna will share details on format and location." },
+    { q: "Are classes online or in-person?", a: "All classes will remain online through Zoom. Homework and test practice sets will be provided each week." },
     { q: "How do I register?", a: "Complete the registration form linked on this page, or call or text 704-236-6064 with any questions before signing up." },
     { q: "What qualifies Joanna to teach?", a: "Joanna scored a 1550 on the SAT and a 36 on the ACT. She is a Schoolhouse.world certified SAT tutor who has taught students across 6 countries, ran a summer SAT camp for 11 students last year, and qualified for the MathCON National Competition as one of 644 selected from over 34,000 nationwide." },
   ];
@@ -114,7 +114,7 @@ export default function App() {
         <div className="nav__inner">
           <a className="nav__logo" href="#hero" onClick={e => { e.preventDefault(); scrollTo("#hero"); }}>
             <span className="nav__mark">J</span>
-            <span className="nav__name">Joanna's Test Prep</span>
+            <span className="nav__name">Aspire Prep</span>
           </a>
           <nav className="nav__links">
             {NAV_LINKS.map(l => (
@@ -140,7 +140,7 @@ export default function App() {
       <section id="hero" className="hero">
         <div className="hero__inner container">
           <div className="hero__left">
-            <div className="hero__eyebrow">Summer 2025 &nbsp;·&nbsp; Enrolling Now</div>
+            <div className="hero__eyebrow">Summer 2026 &nbsp;·&nbsp; Enrolling Now</div>
             <h1 className="hero__h1">
               SAT &amp; ACT Prep<br />
               <em>That Actually Works</em>
@@ -154,7 +154,7 @@ export default function App() {
               </a>
               <a className="btn-outline" href="tel:7042366064">704-236-6064</a>
             </div>
-            <p className="hero__fine">$10 per class &nbsp;·&nbsp; Starting June 2025</p>
+            <p className="hero__fine">$10 per class &nbsp;·&nbsp; Starting June 2026</p>
           </div>
           <div className="hero__right">
             <CredentialSlideshow />
@@ -167,7 +167,7 @@ export default function App() {
         <div className="ticker__track">
           {[0, 1, 2].map(outer => (
             <span key={outer} className="ticker__set">
-              {["SAT Prep", "ACT Prep", "1550 SAT", "36 ACT", "Schoolhouse Certified", "MathCON National Qualifier", "6 Countries", "11 Students", "$10 Per Class", "Starting June 2025"].map((t, i) => (
+              {["SAT Prep", "ACT Prep", "1550 SAT", "36 ACT", "Schoolhouse Certified", "MathCON National Qualifier", "6 Countries", "11 Students", "$10 Per Class", "Starting June 2026"].map((t, i) => (
                 <span key={i} className="ticker__item">{t}<span className="ticker__dot">·</span></span>
               ))}
             </span>
@@ -181,9 +181,7 @@ export default function App() {
           <div className="about__grid">
             <FadeIn className="about__photo-col">
               <div className="about__photo">
-                <div className="about__photo-inner">
-                  <span>Photo<br />Coming Soon</span>
-                </div>
+                <img src="/src/assets/JoannaHeadshot.jpg" alt="Joanna Arul Jeeva" />
               </div>
               <div className="about__caption">
                 <strong>Joanna Arul Jeeva</strong>
@@ -285,7 +283,7 @@ export default function App() {
           </div>
           <FadeIn delay={220}>
             <div className="sched-footer">
-              <div className="sched-detail"><strong>Starts</strong><span>First week of June 2025</span></div>
+              <div className="sched-detail"><strong>Starts</strong><span>First week of June 2026</span></div>
               <div className="sched-detail"><strong>Pricing</strong><span>$10 per class, no packages required</span></div>
               <div className="sched-detail"><strong>Questions</strong><a href="tel:7042366064">704-236-6064</a></div>
             </div>
@@ -387,7 +385,7 @@ export default function App() {
           <div className="footer__top">
             <div className="footer__brand">
               <span className="nav__mark">J</span>
-              <span className="footer__title">Joanna's Test Prep</span>
+              <span className="footer__title">Aspire Prep</span>
             </div>
             <nav className="footer__links">
               {NAV_LINKS.map(l => (
@@ -396,7 +394,7 @@ export default function App() {
             </nav>
           </div>
           <div className="footer__bottom">
-            <span>&copy; 2025 Joanna Arul Jeeva. NCSSM Durham.</span>
+            <span>&copy; 2026 Joanna Arul Jeeva. NCSSM Durham.</span>
             <span>All rights reserved.</span>
           </div>
         </div>
