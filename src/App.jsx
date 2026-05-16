@@ -16,7 +16,7 @@ const CREDENTIALS = [
   { stat: "11", label: "Students Taught", sub: "Last summer's SAT camp" },
   { stat: "6", label: "Countries", sub: "Schoolhouse.world students" },
   { stat: "644", label: "MathCON National", sub: "of 34,000+ applicants" },
-  { stat: "3+", label: "Organizations", sub: "VIP Tutoring, Schoolhouse, independent" },
+  { stat: "3+", label: "Organizations", sub: "VIP Tutoring, independent" },
 ];
 
 function useInView(threshold = 0.12) {
@@ -104,7 +104,7 @@ export default function App() {
     { q: "What is covered each session?", a: "Sessions focus on high-yield strategies, common question patterns, pacing, and problem-solving techniques. Subjects rotate throughout the week for comprehensive coverage." },
     { q: "Are classes online or in-person?", a: "All classes will remain online through Zoom. Homework and test practice sets will be provided each week." },
     { q: "How do I register?", a: "Complete the registration form linked on this page, or call or text 704-236-6064 with any questions before signing up." },
-    { q: "What qualifies Joanna to teach?", a: "Joanna scored a 1550 on the SAT and a 36 on the ACT. She is a Schoolhouse.world certified SAT tutor who has taught students across 6 countries, ran a summer SAT camp for 11 students last year, and qualified for the MathCON National Competition as one of 644 selected from over 34,000 nationwide." },
+    { q: "What qualifies Joanna to teach?", a: "Joanna scored a 1550 on the SAT and a 36 on the ACT. She is a certified SAT tutor who has taught students across 6 countries, ran a summer SAT camp for 11 students last year, and qualified for the MathCON National Competition as one of 644 selected from over 34,000 nationwide." },
   ];
 
   return (
@@ -205,9 +205,9 @@ export default function App() {
                 <div className="quals">
                   <div className="quals__heading">Qualifications</div>
                   {[
-                    { title: "Schoolhouse.world Certified SAT Tutor", sub: "Teaching students across 6 countries" },
+                    { title: "Certified SAT Tutor", sub: "Teaching students across 6 countries" },
                     { title: "MathCON National Qualifier", sub: "1 of 644 selected from 34,000+ nationwide" },
-                    { title: "Multi-Organization Tutoring Experience", sub: "VIP Tutoring, Schoolhouse.world, independent SAT camp" },
+                    { title: "Multi-Organization Tutoring Experience", sub: "VIP Tutoring and independent SAT camp" },
                     { title: "Proven Summer Camp Results", sub: "11 students taught last summer with measurable gains" },
                   ].map((q, i) => (
                     <div key={i} className="qual">
@@ -304,7 +304,7 @@ export default function App() {
               { title: "Small Groups, Real Attention", body: "This is not a video course or a 30-student lecture. Small groups mean every student is seen, heard, and helped each session." },
               { title: "Accessible Pricing", body: "At $10 per class with no packages or contracts, quality test prep is available to every family." },
               { title: "Proven Results", body: "Eleven students completed last summer's SAT camp. They left with sharper skills, better pacing, and genuine confidence for test day." },
-              { title: "Internationally Recognized", body: "As a Schoolhouse.world certified tutor, Joanna has worked with students across 6 countries and understands the wide range of challenges students face." },
+              { title: "Internationally Recognized", body: "As a certified tutor, Joanna has worked with students across 6 countries and understands the wide range of challenges students face." },
               { title: "Only What Matters", body: "No filler content. Every session is built around high-frequency question types, common traps, and the strategies that directly improve scores." },
             ].map((w, i) => (
               <FadeIn key={w.title} delay={i * 55}>
