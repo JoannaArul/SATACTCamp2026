@@ -181,7 +181,7 @@ export default function App() {
           <div className="about__grid">
             <FadeIn className="about__photo-col">
               <div className="about__photo">
-                <img src="/src/assets/JoannaHeadshot.jpg" alt="Joanna Arul Jeeva" />
+                <img src="/JoannaHeadshot.jpg" alt="Joanna Arul Jeeva" />
               </div>
               <div className="about__caption">
                 <strong>Joanna Arul Jeeva</strong>
